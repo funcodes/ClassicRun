@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/but_back"
+            android:layout_width="40dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/but_backgrd"
+            android:onClick="change_view_by_tag"
+            android:tag="@layout/stage_mode"
+            android:src="@drawable/back" />
+
+        <ScrollView
+            android:layout_width="150dp"
+            android:layout_height="360dp"
+            android:scrollbars="none" >
+
+            <LinearLayout
+    android:id="@+id/lay_stage_select"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/but_stage_1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/stage_back"
+                    android:onClick="click_stagemode"
+                    android:padding="10dp"
+                    android:src="@drawable/s1"
+                    android:tag="1" />
+
+                <ImageButton
+                    android:id="@+id/but_stage_2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/stage_back"
+                    android:onClick="click_stagemode"
+                    android:padding="10dp"
+                    android:src="@drawable/s2"
+                    android:tag="2" />
+
+                <ImageButton
+                    android:id="@+id/but_stage_3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/stage_back"
+                    android:onClick="click_stagemode"
+                    android:padding="10dp"
+                    android:src="@drawable/s3"
+                    android:tag="3" />
+
+                <ImageButton
+                    android:id="@+id/but_stage_4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/stage_back"
+                    android:onClick="click_stagemode"
+                    android:padding="10dp"
+                    android:src="@drawable/s4"
+                    android:tag="4" />
+
+                <ImageButton
+                    android:id="@+id/but_stage_5"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/stage_back"
+                    android:onClick="click_stagemode"
+                    android:padding="10dp"
+                    android:src="@drawable/s5"
+                    android:tag="5" />
+
+                <ImageButton
+                    android:id="@+id/but_stage_6"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/stage_back"
+                    android:onClick="click_stagemode"
+                    android:padding="10dp"
+                    android:src="@drawable/s6"
+                    android:tag="6" />
+
+                <ImageButton
+                    android:id="@+id/but_stage_7"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/stage_back"
+                    android:onClick="click_stagemode"
+                    android:padding="10dp"
+                    android:src="@drawable/s7"
+                    android:tag="7" />
+
+                <ImageButton
+                    android:id="@+id/but_stage_8"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/stage_back"
+                    android:onClick="click_stagemode"
+                    android:padding="10dp"
+                    android:src="@drawable/s8"
+                    android:tag="8" />
+
+                <ImageButton
+                    android:id="@+id/but_stage_9"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/stage_back"
+                    android:onClick="click_stagemode"
+                    android:padding="10dp"
+                    android:src="@drawable/s9"
+                    android:tag="9" />
+
+                <ImageButton
+                    android:id="@+id/but_stage_more"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/stage_back"
+                    android:onClick="click_stagemode"
+                    android:padding="10dp"
+                    android:src="@drawable/s10"
+                    android:tag="10" />
+                <ImageButton
+                    android:id="@+id/but_stage_more"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/stage_back"
+                    android:onClick="click_stagemode"
+                    android:padding="10dp"
+                    android:src="@drawable/s11"
+                    android:tag="11" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:src="@drawable/choosestage" />
+    </LinearLayout>

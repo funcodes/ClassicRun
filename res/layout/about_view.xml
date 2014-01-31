@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="360dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/but_back"
+            android:layout_width="40dp"
+            android:layout_height="100dp"
+            android:layout_gravity="top"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/but_backgrd"
+            android:onClick="change_view_by_tag"
+            android:tag="@layout/welcome_view"
+            android:src="@drawable/back" />
+
+        <com.fax.runrect.RotateableTextView
+            android:id="@+id/about_text"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_gravity="center"
+            android:text="Google第四届Android应用开发中国大学生挑战赛\n\n学校:新疆师范大学\n\n小组:林法鑫,石启锐,刘若兰"
+            android:textColor="#ffffffff"
+            android:textSize="24dp" />
+    </LinearLayout>

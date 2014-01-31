@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="240dp"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/but_about"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/but_backgrd"
+            android:onClick="change_view_by_tag"
+            android:tag="@layout/about_view"
+            android:src="@drawable/about" />
+
+        <ImageButton
+            android:id="@+id/but_setting"
+            android:layout_width="35dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-10dp"
+            android:background="@drawable/but_backgrd"
+            android:onClick="change_view_by_tag"
+            android:tag="@layout/setting_view"
+            android:src="@drawable/setting" />
+
+        <ImageButton
+            android:id="@+id/but_start"
+            android:layout_width="40dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/but_backgrd"
+            android:onClick="change_view_by_tag"
+            android:tag="@layout/stage_mode"
+            android:src="@drawable/start_game" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/title" />
+</LinearLayout>

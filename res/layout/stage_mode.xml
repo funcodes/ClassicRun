@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/but_back"
+            android:layout_width="40dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/but_backgrd"
+            android:onClick="change_view_by_tag"
+            android:tag="@layout/welcome_view"
+            android:src="@drawable/back" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/but_backgrd"
+            android:onClick="change_view_by_tag"
+            android:tag="@layout/usepoint_view"
+            android:src="@drawable/usepoints" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/but_backgrd"
+            android:onClick="change_view_by_tag"
+            android:tag="@layout/stage_select"
+            android:src="@drawable/staticstagemode" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/but_backgrd"
+            android:onClick="change_view_by_tag"
+            android:tag="@layout/difficulty_select"
+            android:src="@drawable/difctmode" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:src="@drawable/modeselect" />
+</LinearLayout>

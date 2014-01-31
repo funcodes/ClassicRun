@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="horizontal" >
+    <LinearLayout 
+    android:layout_width="80dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+        <ImageButton
+            android:id="@+id/but_back"
+            android:layout_width="40dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/but_backgrd"
+            android:onClick="change_view_by_tag"
+            android:tag="@layout/difficulty_select"
+            android:src="@drawable/back" />
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_margin="50dp"
+            android:tag="custom"
+            android:background="@drawable/but_backgrd"
+            android:onClick="click_difcmode"
+            android:src="@drawable/start_game" />
+    </LinearLayout>
+
+    <RadioGroup 
+    android:layout_width="80dp"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+        <com.fax.runrect.RotateableTextView
+            android:layout_width="400dp"
+            android:layout_height="125dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="110dp"
+            android:textSize="24sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffffff"
+            android:text="三个矩形:" />
+        
+        <com.fax.runrect.RotateableButton
+            android:id="@+id/text_custom_3rect_0"
+            style="@style/customBtn"
+            android:text="无" />
+        <com.fax.runrect.RotateableButton
+            android:id="@+id/text_custom_3rect_1"
+            style="@style/customBtn"
+            android:checked="true"
+            android:text="有" />
+        <com.fax.runrect.RotateableButton
+            android:id="@+id/text_custom_3rect_2"
+            style="@style/customBtn"
+            android:text="减少" />
+    </RadioGroup>
+    <RadioGroup 
+    android:layout_width="80dp"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+        <com.fax.runrect.RotateableTextView
+            android:layout_width="400dp"
+            android:layout_height="125dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="110dp"
+            android:background="#00000000"
+            android:textSize="24sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffffff"
+            android:text="游戏速度:" />
+        <com.fax.runrect.RotateableButton
+            android:id="@+id/text_custom_speed_1"
+            style="@style/customBtn"
+            android:text="慢" />
+        <com.fax.runrect.RotateableButton
+            android:id="@+id/text_custom_speed_2"
+            style="@style/customBtn"
+            android:text="中" />
+        <com.fax.runrect.RotateableButton
+            android:id="@+id/text_custom_speed_3"
+            style="@style/customBtn"
+            android:checked="true"
+            android:text="快" />
+        <com.fax.runrect.RotateableButton
+            android:id="@+id/text_custom_speed_4"
+            style="@style/customBtn"
+            android:text="很快" />
+    </RadioGroup>
+    <RadioGroup 
+    android:layout_width="80dp"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+        <com.fax.runrect.RotateableTextView
+            android:layout_width="400dp"
+            android:layout_height="125dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="110dp"
+            android:background="#00000000"
+            android:textSize="24sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffffff"
+            android:text="障碍数量:" />
+        <com.fax.runrect.RotateableButton
+            android:id="@+id/text_custom_obsnum_1"
+            style="@style/customBtn"
+            android:text="少" />
+        <com.fax.runrect.RotateableButton
+            android:id="@+id/text_custom_obsnum_2"
+            style="@style/customBtn"
+            android:text="中" />
+        <com.fax.runrect.RotateableButton
+            android:id="@+id/text_custom_obsnum_3"
+            style="@style/customBtn"
+            android:checked="true"
+            android:text="多" />
+        <com.fax.runrect.RotateableButton
+            android:id="@+id/text_custom_obsnum_4"
+            style="@style/customBtn"
+            android:text="很多" />
+    </RadioGroup>
+</LinearLayout>

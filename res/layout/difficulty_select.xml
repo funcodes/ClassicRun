@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="220dp"
+    android:gravity="center"
+    android:orientation="horizontal" >
+<ImageButton
+            android:id="@+id/but_back"
+            android:layout_width="40dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/but_backgrd"
+            android:onClick="change_view_by_tag"
+            android:tag="@layout/stage_mode"
+            android:src="@drawable/back" />
+
+        <ImageButton
+            android:id="@+id/but_stage_custom"
+            android:layout_width="40dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/but_backgrd"
+            android:onClick="click_difcmode"
+            android:src="@drawable/custom"
+            android:tag="showcustom" />
+
+        <ImageView
+            android:id="@+id/but_stage_custom_lock"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="-45dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/lock" />
+
+        <ImageButton
+            android:id="@+id/but_stage_hard"
+            android:layout_width="40dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/but_backgrd"
+            android:onClick="click_difcmode"
+            android:src="@drawable/hard"
+            android:tag="hard" />
+
+        <ImageView
+            android:id="@+id/but_stage_hard_lock"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="-45dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/lock" />
+
+        <ImageButton
+            android:id="@+id/but_stage_normal"
+            android:layout_width="40dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/but_backgrd"
+            android:onClick="click_difcmode"
+            android:src="@drawable/normal"
+            android:tag="normal" />
+
+        <ImageView
+            android:id="@+id/but_stage_normal_lock"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="-45dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/lock" />
+
+        <ImageButton
+            android:id="@+id/but_stage_easy"
+            android:layout_width="40dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/but_backgrd"
+            android:onClick="click_difcmode"
+            android:src="@drawable/easy"
+            android:tag="easy" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:src="@drawable/choosedifc" />
+
+</LinearLayout>

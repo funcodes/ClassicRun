@@ -1,0 +1,82 @@
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+		<com.fax.runrect.MyGameView 
+            android:id="@+id/mygameview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+		    />
+        <ImageButton
+            android:id="@+id/but_pause"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right|bottom"
+            android:layout_margin="10dp"
+            android:background="@drawable/but_pause"
+            android:onClick="click_pause" />
+
+        <ImageButton
+            android:id="@+id/but_attack1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="left|bottom"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/obschangtoscore"
+            android:onClick="click_attack1" />
+
+        
+
+        <LinearLayout
+            android:id="@+id/lay_attack"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:layout_marginBottom="65dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <com.fax.runrect.RotateableTextView
+            android:id="@+id/score_text"
+            android:layout_width="70dp"
+            android:layout_height="90dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="50dp"
+            android:gravity="center|left"
+            android:text=""
+            android:textColor="#ffFC2222"
+            android:textSize="22sp" />
+
+        <com.fax.runrect.RotateableTextView
+            android:id="@+id/highscore_text"
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="50dp"
+            android:gravity="top"
+            android:text=""
+            android:textColor="#ffFC2222"
+            android:textSize="16sp" />
+
+        <com.fax.runrect.RotateableTextView
+            android:id="@+id/info_text"
+            android:layout_width="80dp"
+            android:layout_height="320dp"
+            android:layout_gravity="right"
+            android:gravity="top"
+            android:text=""
+            android:textColor="#ffFC2222"
+            android:textSize="20sp" />
+
+        <com.fax.runrect.MyLinearLayout
+            android:id="@+id/lay_frontll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#64000000"
+            android:gravity="center"
+            android:orientation="vertical" >
+        </com.fax.runrect.MyLinearLayout>
+        
+    </FrameLayout>

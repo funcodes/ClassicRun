@@ -1,0 +1,16 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Light.NoTitleBar.Fullscreen" />
+
+    <style name="customBtn" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/custombut_backgrd</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+</resources>
